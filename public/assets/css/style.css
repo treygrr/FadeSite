@@ -1,0 +1,26 @@
+@import "/assets/css/components/Slider.0000.css";
+@import "/assets/css/components/Slider.0500.css";
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: normal;
+}
+h1, h2, h3, h4, h5 {
+    font-family: sans-serif, sans-serif;
+    text-align: left;
+}
+p {
+    font-style: normal;
+    text-align: left;
+}

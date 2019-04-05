@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  web:
+    image: buzzingpixel/nginx:latest
+    container_name: nginx-playground
+    environment:
+      HOSTNAME: nginx-playground
+    ports:
+      - "${DOCKER_NGINX_PORT}:80"
+    volumes:
+      - ${DOCKER_NGINX_CONF_FILE}:/etc/nginx/conf.d/site.conf
+      - .:/app
+
+    networks:
+      common:
+        aliases:
+          - ${SERVER_NAME_ALIAS}
+networks:
+  common:
